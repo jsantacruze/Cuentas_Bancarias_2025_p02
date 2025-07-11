@@ -159,6 +159,7 @@
             this.personaDataGridView.ReadOnly = true;
             this.personaDataGridView.Size = new System.Drawing.Size(1055, 484);
             this.personaDataGridView.TabIndex = 0;
+            this.personaDataGridView.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.personaDataGridView_CellContentDoubleClick);
             // 
             // bindingNavigatorMoveFirstItem
             // 

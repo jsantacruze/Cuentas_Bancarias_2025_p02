@@ -102,6 +102,12 @@
     <Compile Include="frmPrincipal.Designer.cs">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentacion\Personas\frmPersonaDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Personas\frmPersonaDetail.Designer.cs">
+      <DependentUpon>frmPersonaDetail.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentacion\Personas\frmPersonasList.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmPrincipal.resx">
       <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Personas\frmPersonaDetail.resx">
+      <DependentUpon>frmPersonaDetail.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Personas\frmPersonasList.resx">
       <DependentUpon>frmPersonasList.cs</DependentUpon>

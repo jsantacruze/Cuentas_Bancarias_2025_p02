@@ -53,5 +53,15 @@ namespace Cuentas_Bancarias.Presentacion.Personas
         {
             Buscar();
         }
+
+        private void personaDataGridView_CellContentDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var persona_actual = personaBindingSource.Current as Dominio.Personas.Persona;
+            if (persona_actual != null)
+            {
+                frmPersonaDetail form = new frmPersonaDetail(persona_actual.Id);
+                form.ShowDialog();
+            }
+        }
     }
 }

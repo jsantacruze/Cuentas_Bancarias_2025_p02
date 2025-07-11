@@ -22,7 +22,7 @@ namespace Cuentas_Bancarias.Data.Personas
             }
         }
 
-        public PersonaDAO() : base("personas.json") 
+        public PersonaDAO() : base("personas.json")
         {
         }
 
@@ -48,6 +48,17 @@ namespace Cuentas_Bancarias.Data.Personas
             var result = this.data.Where(p => p.Apellido.ToUpper()
             .Contains(filtro.ToUpper()) || p.Nombre.ToUpper().Contains(filtro.ToUpper())).ToList();
             return result;
+        }
+
+        public int getNextId()
+        {
+            if (this.data.Count == 0)
+                return 1;
+            else
+            {
+                var maxId = this.data.Max(p => p.Id);
+                return maxId + 1;
+            }
         }
     }
 }
