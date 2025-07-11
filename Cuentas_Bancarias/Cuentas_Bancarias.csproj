@@ -96,16 +96,25 @@
     <Compile Include="Dominio\Ubicaciones\EstadoProvincia.cs" />
     <Compile Include="Dominio\Ubicaciones\Pais.cs" />
     <Compile Include="Dominio\Ubicaciones\UbicacioGeografica.cs" />
-    <Compile Include="frmPersonas.cs">
+    <Compile Include="frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmPersonas.Designer.cs">
-      <DependentUpon>frmPersonas.cs</DependentUpon>
+    <Compile Include="frmPrincipal.Designer.cs">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\Personas\frmPersonasList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\Personas\frmPersonasList.Designer.cs">
+      <DependentUpon>frmPersonasList.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="frmPersonas.resx">
-      <DependentUpon>frmPersonas.cs</DependentUpon>
+    <EmbeddedResource Include="frmPrincipal.resx">
+      <DependentUpon>frmPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\Personas\frmPersonasList.resx">
+      <DependentUpon>frmPersonasList.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -118,6 +127,8 @@
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\Cuentas_Bancarias.Dominio.Personas.Cliente.datasource" />
+    <None Include="Properties\DataSources\Cuentas_Bancarias.Dominio.Personas.Empleado.datasource" />
+    <None Include="Properties\DataSources\Cuentas_Bancarias.Dominio.Personas.Persona.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

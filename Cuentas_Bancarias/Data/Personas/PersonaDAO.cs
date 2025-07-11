@@ -45,7 +45,8 @@ namespace Cuentas_Bancarias.Data.Personas
 
         public List<Dominio.Personas.Persona> getByApellidosNombres(string filtro)
         {
-            var result = this.data.Where(p => p.Apellido.Contains(filtro) || p.Nombre.Contains(filtro)).ToList();
+            var result = this.data.Where(p => p.Apellido.ToUpper()
+            .Contains(filtro.ToUpper()) || p.Nombre.ToUpper().Contains(filtro.ToUpper())).ToList();
             return result;
         }
     }

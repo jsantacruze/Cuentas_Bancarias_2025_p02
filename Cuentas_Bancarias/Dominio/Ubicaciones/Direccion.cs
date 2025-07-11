@@ -31,5 +31,10 @@ namespace Cuentas_Bancarias.Dominio.Ubicaciones
             this.ubicacio_geografica = ubicacio_geografica;
             Ciudad = ciudad;
         }
+
+        public override string ToString()
+        {
+            return this.calle_principal + " " + this.calle_secundaria + ", "  + this.codigo_postal + " - " + this.referencia;
+        }
     }
 }

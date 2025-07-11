@@ -16,7 +16,7 @@ namespace Cuentas_Bancarias
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmPersonas());
+            Application.Run(new frmPrincipal());
         }
     }
 }
